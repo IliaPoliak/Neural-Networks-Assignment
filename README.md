@@ -1,4 +1,6 @@
-# Data analysis
+# Documentation
+
+## Data analysis
 
 - Dataset has 1000 samples and 21 features.
 - Target variable (class) is imbalanced (70% good, 30% bad).
@@ -10,20 +12,20 @@
 
 ![alt text](imgs/image-1.png)
 
-# Data preprocessing, normalization and data split
+## Data preprocessing, normalization and data split
 
 - Input-output split is done (chose class variable as output)
 - Categorical variables encoded (now have 48 features instead of 20)
 - Numerical features normalized (with StandardScaler)
 - Train-test split is done (train: 85%, test: 15%)
 
-# Configuration
+## Configuration
 
 - Configured the base model, ran and visualized it
 
 ![alt text](imgs/image-2.png)
 
-# Experiment tracking
+## Experiment tracking
 
 - Initialized experiment log and experiment definition function
 - Run the baseline experiment again to demonstrate its functionality
@@ -37,12 +39,12 @@
   - Dropout Rate (0 if no dropout)
   - Batch Normalization Technique (use or not)
 
-# Experiments
+## Experiments
 
 - Ran Several Experiments and Recorded my thoughts
 - Came to conclution that i need to use dropout to prevent overfitting
 
-# Hyperparameter search (random)
+## Hyperparameter search (random)
 
 - Used random search
 - Ran 50 experiments
@@ -54,7 +56,7 @@
   - Dropout Rate: 0.30
   - Without Batch Normalization
 
-# Results and evaluation metrics
+## Results and evaluation metrics
 
 ```
 Classification Report:
@@ -74,7 +76,7 @@ weighted avg      0.735     0.740     0.737       150
 
 ![alt text](imgs/image-5.png)
 
-# Conclusion
+## Conclusion
 
 The final model achieves:
 
@@ -82,3 +84,4 @@ The final model achieves:
 - Strong AUC and recall, suitable for imbalanced datasets
 
 Still, misclassifies some risky (bad) borrowers
+
